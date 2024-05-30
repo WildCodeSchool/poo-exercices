@@ -27,3 +27,30 @@
 // Créez des sous-classes CreditCardPayment et PayPalPayment qui implémentent la méthode processPayment.
 // Créez une fonction processTransaction qui prend un objet Payment (donc ici soit creditcardpayment, soit paypalpayment) en argument et appelle processPayment.
 
+class Payment {
+	processPayment(amount) {
+		throw new Error("Method not implemented");
+	}
+}
+
+class CreditCardPayment extends Payment {
+	processPayment(amount) {
+		console.log(`Processing credit card payment of $${amount}`);
+	}
+}
+
+class PayPalPayment extends Payment {
+	processPayment(amount) {
+		console.log(`Processing PayPal payment of $${amount}`);
+	}
+}
+
+function processTransaction(paymentMethod, amount) {
+	paymentMethod.processPayment(amount);
+}
+
+const creditCardPayment = new CreditCardPayment();
+const payPalPayment = new PayPalPayment();
+
+processTransaction(creditCardPayment, 100);
+processTransaction(payPalPayment, 200);
