@@ -27,23 +27,6 @@
 // ------------------------------------------------
 // ------------------------------------------------
 
-// QU'EST CE QUE LE POLYMORPHISME EN POO :
-// Polymorphisme vient du grec et signifie "plusieurs formes". En programmation orientée objet (POO), il désigne la capacité d'une méthode ou d'un objet à se comporter de différentes manières selon le contexte.
-
-// Métaphore du Polymorphisme
-// Imaginez une télécommande universelle. Une télécommande peut contrôler plusieurs appareils différents comme une télévision, un lecteur DVD et un système de son. Selon l'appareil que vous souhaitez contrôler, la télécommande enverra des signaux différents, même si vous appuyez sur le même bouton.
-
-// Bouton "Power" :
-// Si vous pointez la télécommande vers la télévision et appuyez sur "Power", la télévision s'allume ou s'éteint.
-// Si vous pointez la télécommande vers le lecteur DVD et appuyez sur "Power", le lecteur DVD s'allume ou s'éteint.
-// Si vous pointez la télécommande vers le système de son et appuyez sur "Power", le système de son s'allume ou s'éteint.
-// Le bouton "Power" est polymorphe : il a la même apparence et la même interface, mais il effectue des actions différentes selon l'appareil contrôlé.
-
-// ------------------------------------------------
-// ------------------------------------------------
-// ------------------------------------------------
-// ------------------------------------------------
-
 // STEP 2 ___ EXERCICE :
 
 // Objectif : Utiliser l'héritage pour créer des sous-classes Teacher et Student basées sur une classe parent Person.
@@ -53,4 +36,3 @@
 // Créez une sous-classe Teacher qui hérite de Person et ajoute une propriété subject et une méthode introduce (qui reprend celle de person et) qui inclut le sujet enseigné.
 // Créez une sous-classe Student qui hérite de Person et ajoute une propriété grade et une méthode introduce qui inclut le grade (année scolaire).
 // Créez des instances de Teacher et Student et appelez leur méthode introduce.
-
